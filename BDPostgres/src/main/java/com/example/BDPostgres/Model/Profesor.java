@@ -16,6 +16,9 @@ public class Profesor {
 
     @OneToMany(mappedBy = "profesor", cascade = CascadeType.ALL)
     private List<Estudiante> estudiantes;
+
+    @OneToMany(mappedBy = "profesor", cascade = CascadeType.ALL)
+    private List<Materia> materias;
     public Profesor() {
     }
 
